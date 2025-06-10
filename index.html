@@ -2,12 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Tell the browser how to resolve all relative URLs (scripts, links, images) -->
+    <base href="%BASE_URL%" />
+
+    <!-- Favicon, etc → also uses the right base -->
+    <link rel="icon" href="%BASE_URL%favicon.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lunchbylaa</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Vite will replace %BASE_URL% with "/" in dev, or "/lunchbylaa/" in prod -->
+    <script type="module" src="%BASE_URL%src/main.jsx"></script>
   </body>
 </html>
