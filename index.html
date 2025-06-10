@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- Tell the browser how to resolve all relative URLs (scripts, links, images) -->
+    <!-- 1) Base tag uses Vite's placeholder for development vs. production -->
     <base href="%BASE_URL%" />
 
-    <!-- Favicon, etc → also uses the right base -->
+    <!-- 2) Favicon uses BASE_URL -->
     <link rel="icon" href="%BASE_URL%favicon.ico" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <body>
     <div id="root"></div>
 
-    <!-- Vite will replace %BASE_URL% with "/" in dev, or "/lunchbylaa/" in prod -->
-    <script type="module" src="%BASE_URL%src/main.jsx"></script>
+    <!-- 3) Entry point remains a fixed path for Vite to pick up -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
