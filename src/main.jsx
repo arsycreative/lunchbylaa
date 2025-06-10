@@ -21,72 +21,77 @@ import AdminMainDashboard from "./pages/AdminMainDashboard.jsx";
 import StatisticPage from "./pages/StatisticPage.jsx";
 import CreateMenuPage from "./pages/CreateMenuPage.jsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+    {
+      path: "/login",
+      element: <LoginPage />,
+    },
+    {
+      path: "/register",
+      element: <RegisterPage />,
+    },
+    {
+      path: "/detail",
+      element: <DetailMenuPage />,
+    },
+    {
+      path: "/add-menu",
+      element: <AddMenuPage />,
+    },
+    {
+      path: "/confirmation",
+      element: <OrderConfirmation />,
+    },
+    {
+      path: "/payment-instruction",
+      element: <PaymentInstruction />,
+    },
+    {
+      path: "/cart",
+      element: <CartPage />,
+    },
+    {
+      path: "/customer-data",
+      element: <CustomerData />,
+    },
+    {
+      path: "/admin-login",
+      element: <AdminLoginPage />,
+    },
+    {
+      path: "/admin-register",
+      element: <RegisterAdminPage />,
+    },
+    {
+      path: "/admin-dashboard",
+      element: <AdminMainDashboard />,
+    },
+    {
+      path: "/admin",
+      element: <AdminDashboardPage />,
+    },
+    {
+      path: "/edit",
+      element: <EditMenuPage />,
+    },
+    {
+      path: "/statistic",
+      element: <StatisticPage />,
+    },
+    {
+      path: "/create",
+      element: <CreateMenuPage />,
+    },
+  ],
   {
-    path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/login",
-    element: <LoginPage />,
-  },
-  {
-    path: "/register",
-    element: <RegisterPage />,
-  },
-  {
-    path: "/detail",
-    element: <DetailMenuPage />,
-  },
-  {
-    path: "/add-menu",
-    element: <AddMenuPage />,
-  },
-  {
-    path: "/confirmation",
-    element: <OrderConfirmation />,
-  },
-  {
-    path: "/payment-instruction",
-    element: <PaymentInstruction />,
-  },
-  {
-    path: "/cart",
-    element: <CartPage />,
-  },
-  {
-    path: "/customer-data",
-    element: <CustomerData />,
-  },
-  {
-    path: "/admin-login",
-    element: <AdminLoginPage />,
-  },
-  {
-    path: "/admin-register",
-    element: <RegisterAdminPage />,
-  },
-  {
-    path: "/admin-dashboard",
-    element: <AdminMainDashboard />,
-  },
-  {
-    path: "/admin",
-    element: <AdminDashboardPage />,
-  },
-  {
-    path: "/edit",
-    element: <EditMenuPage />,
-  },
-  {
-    path: "/statistic",
-    element: <StatisticPage />,
-  },
-  {
-    path: "/create",
-    element: <CreateMenuPage />,
-  },
-]);
+    basename: import.meta.env.BASE_URL,
+  }
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
