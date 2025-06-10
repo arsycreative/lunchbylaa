@@ -1,9 +1,9 @@
 {
   "name": "lunchbylaa",
+  "homepage": "https://arsycreative.github.io/lunchbylaa/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://arsycreative.github.io/lunchbylaa",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
