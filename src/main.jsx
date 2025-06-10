@@ -1,14 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import App from "./App.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import HomePage from "./pages/HomePage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import DetailMenuPage from "./pages/DetailMenuPage.jsx";
 import AddMenuPage from "./pages/AddMenuPage.jsx";
-import ConfirmationPage from "./pages/OrderConfirmationPage.jsx";
 import OrderConfirmation from "./pages/OrderConfirmationPage.jsx";
 import PaymentInstruction from "./pages/PaymentInstruction.jsx";
 import { CartPage } from "./pages/CartPage.jsx";
@@ -20,81 +19,30 @@ import EditMenuPage from "./pages/EditMenuPage.jsx";
 import AdminMainDashboard from "./pages/AdminMainDashboard.jsx";
 import StatisticPage from "./pages/StatisticPage.jsx";
 import CreateMenuPage from "./pages/CreateMenuPage.jsx";
-
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <HomePage />,
-    },
-    {
-      path: "/login",
-      element: <LoginPage />,
-    },
-    {
-      path: "/register",
-      element: <RegisterPage />,
-    },
-    {
-      path: "/detail",
-      element: <DetailMenuPage />,
-    },
-    {
-      path: "/add-menu",
-      element: <AddMenuPage />,
-    },
-    {
-      path: "/confirmation",
-      element: <OrderConfirmation />,
-    },
-    {
-      path: "/payment-instruction",
-      element: <PaymentInstruction />,
-    },
-    {
-      path: "/cart",
-      element: <CartPage />,
-    },
-    {
-      path: "/customer-data",
-      element: <CustomerData />,
-    },
-    {
-      path: "/admin-login",
-      element: <AdminLoginPage />,
-    },
-    {
-      path: "/admin-register",
-      element: <RegisterAdminPage />,
-    },
-    {
-      path: "/admin-dashboard",
-      element: <AdminMainDashboard />,
-    },
-    {
-      path: "/admin",
-      element: <AdminDashboardPage />,
-    },
-    {
-      path: "/edit",
-      element: <EditMenuPage />,
-    },
-    {
-      path: "/statistic",
-      element: <StatisticPage />,
-    },
-    {
-      path: "/create",
-      element: <CreateMenuPage />,
-    },
-  ],
-  {
-    basename: import.meta.env.BASE_URL,
-  }
-);
+import NotFoundPage from "./pages/NotFoundPage.jsx"; // pastikan ini ada
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/detail" element={<DetailMenuPage />} />
+        <Route path="/add-menu" element={<AddMenuPage />} />
+        <Route path="/confirmation" element={<OrderConfirmation />} />
+        <Route path="/payment-instruction" element={<PaymentInstruction />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/customer-data" element={<CustomerData />} />
+        <Route path="/admin-login" element={<AdminLoginPage />} />
+        <Route path="/admin-register" element={<RegisterAdminPage />} />
+        <Route path="/admin-dashboard" element={<AdminMainDashboard />} />
+        <Route path="/admin" element={<AdminDashboardPage />} />
+        <Route path="/edit" element={<EditMenuPage />} />
+        <Route path="/statistic" element={<StatisticPage />} />
+        <Route path="/create" element={<CreateMenuPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   </StrictMode>
 );
