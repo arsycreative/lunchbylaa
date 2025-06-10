@@ -1,0 +1,138 @@
+.create-menu-container {
+  background-color: #ffcce6;
+  min-height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create-menu-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-menu-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: underline wavy black;
+}
+
+.create-menu-form {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* biar anak-anak ikut lebar penuh */
+  gap: 16px;
+}
+
+.create-menu-input,
+.create-menu-dropdown {
+  box-sizing: border-box;
+  width: 100%; /* penuh sesuai container form */
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #aaa; /* kasih border supaya rapi */
+  background-color: white; /* default */
+}
+
+.create-menu-name {
+  background-color: #cdc1ff;
+  border-color: #8a7bff;
+}
+
+.create-menu-price {
+  background-color: #b2ebf2;
+  border-color: #5bc6cb;
+}
+
+.create-menu-dropdown {
+  background-color: #e1f5fe;
+}
+
+.create-menu-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.create-menu-image-preview {
+  height: 300px;
+  border-radius: 12px;
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+.create-menu-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.create-menu-name {
+  background-color: #cdc1ff;
+}
+
+.create-menu-price {
+  background-color: #b2ebf2;
+}
+
+.create-menu-dropdown {
+  width: 100%;
+  max-width: 430px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #e1f5fe;
+  font-size: 16px;
+  border: 1px solid #aaa;
+}
+
+.create-menu-save-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #cdc1ff;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.create-menu-input,
+.create-menu-dropdown,
+.cr .create-menu-save-btn {
+  max-width: 100%;
+}
+
+.create-menu-image-preview {
+  width: 300px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.create-menu-image-preview .preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

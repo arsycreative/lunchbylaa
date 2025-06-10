@@ -1,0 +1,153 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffc0cb;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full tinggi layar */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-container,
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* ubah dari center jadi stretch */
+  justify-content: center;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Admin Icon */
+.admin-icon {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+/* Title */
+h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  background: #fff;
+}
+
+.input-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  background: transparent;
+}
+
+/* Button */
+button {
+  background-color: #ff69b4;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-top: 12px;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Links */
+.signup-link,
+.login-link {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.signup-link a,
+.login-link a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+.signup-link a:hover,
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container,
+  .register-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .admin-icon {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-icon {
+    width: 70px;
+  }
+
+  .input-group {
+    padding: 10px;
+  }
+
+  .input-icon {
+    font-size: 16px;
+  }
+}

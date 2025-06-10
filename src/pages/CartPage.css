@@ -1,0 +1,128 @@
+.cart-page {
+  background: #f8cde4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.header-cart {
+  padding: 1rem;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 40px;
+}
+.cart-list {
+  flex: 1;
+  overflow-y: auto;
+}
+.cart-item {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 0.75rem;
+}
+.cart-item-info {
+  flex: 1;
+}
+.cart-item-info h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.cart-item-info p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+.cart-qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.cart-item-qty {
+  margin-top: 10px;
+}
+
+.cart-qty-controls button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #c2efff;
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* center the symbol horizontally & vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* make the “+”/“−” black */
+  color: #000;
+  font-size: 1rem;
+}
+
+.cart-qty-controls span {
+  /* ensure the number container is same height as buttons */
+  min-width: 20px;
+  height: 28px;
+
+  /* center the number vertically & horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* black text */
+  color: #000;
+  font-size: 1rem;
+}
+
+.cart-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #c2efff;
+  padding: 0.75rem 1rem;
+  gap: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.cart-bar-icon {
+  font-size: 1.2rem;
+}
+
+.cart-bar-total {
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.cart-bar-checkout {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin: 0 !important;
+  font-size: 0.9rem;
+  cursor: pointer;
+}

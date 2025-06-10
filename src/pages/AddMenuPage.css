@@ -1,0 +1,206 @@
+.add-menu-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: #cdc1ff;
+}
+
+.add-menu-header {
+  background-color: #cdc1ff;
+  padding: 140px 16px 24px;
+  position: relative;
+  text-align: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.add-menu-back-button {
+  background: none;
+  border: none;
+  color: #fff;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-menu-back-button svg {
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.add-menu-title {
+  font-size: 22px;
+  margin-top: -20px;
+  text-decoration: none !important;
+}
+
+.add-menu-section {
+  flex: 1;
+  background-color: #fff6e3;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.add-menu-content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.add-menu-card {
+  background-color: #fff2dd;
+  border-radius: 16px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.add-menu-image {
+  width: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.add-menu-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.add-menu-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.add-menu-price-and-qty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.add-menu-price {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.add-menu-quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+}
+
+.add-menu-quantity-selector button,
+.add-menu-quantity-selector span {
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  line-height: 1;
+  padding: 0;
+  border: none;
+  background-color: #b5e6ff;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-menu-quantity-value {
+  margin-top: 10px;
+}
+
+.add-menu-quantity-selector span {
+  background-color: transparent;
+  font-weight: bold;
+  color: #333;
+}
+
+.add-menu-hot-level-container {
+  margin-bottom: 24px;
+}
+
+.add-menu-hot-level-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.add-menu-checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bfecff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  width: 100%;
+  gap: 12px;
+  flex-wrap: wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.add-menu-checkbox-label span {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.add-menu-checkbox-label input {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 600px) {
+  .add-menu-checkbox-label {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .add-menu-checkbox-label input {
+    margin-left: auto;
+  }
+}
+
+.add-menu-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6e3;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 16px;
+  height: 100%;
+}
+
+.add-menu-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 16px;
+}
+
+.add-menu-add-to-cart-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 16px;
+}

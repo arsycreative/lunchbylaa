@@ -1,0 +1,93 @@
+.order-confirm-payment {
+  background-color: pink;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.order-confirm-payment__back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff5cc;
+  cursor: pointer;
+}
+
+.order-confirm-payment__content {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.order-confirm-payment__instruction {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.order-confirm-payment__method {
+  font-size: 24px;
+  margin: 16px 0;
+  color: #333;
+}
+
+.order-confirm-payment__qr {
+  margin: 16px 0;
+}
+
+.order-confirm-payment__qr-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.order-confirm-payment__account,
+.order-confirm-payment__number {
+  font-size: 14px;
+  color: #333;
+  margin: 4px 0;
+}
+
+.order-confirm-payment__total-bar {
+  background-color: #bfecff;
+  max-width: 400px;
+  width: 100%;
+  padding: 12px 24px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #333;
+}
+
+.order-confirm-payment__total-value {
+  color: #a36a2c;
+}
+
+.order-confirm-payment__cta {
+  margin-top: auto;
+  margin-bottom: 60px;
+
+  background-color: #fff5cc;
+  color: black;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 90%;
+  max-width: 400px;
+}
