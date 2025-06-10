@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/lunchbylaa/vite.svg" />
+
+    <!-- 1) Base tag uses Vite's placeholder for development vs. production -->
+    <base href="/lunchbylaa/" />
+
+    <!-- 2) Favicon uses BASE_URL -->
+    <link rel="icon" href="/lunchbylaa/favicon.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lunchbylaa</title>
     <script type="module" crossorigin src="/lunchbylaa/assets/index-D4ynxufG.js"></script>
@@ -10,5 +16,7 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- 3) Entry point remains a fixed path for Vite to pick up -->
   </body>
 </html>
